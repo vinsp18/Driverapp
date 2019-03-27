@@ -1,0 +1,36 @@
+<ion-header>
+	<ion-navbar color="primary">
+    <ion-title>Your Profile</ion-title>
+    <ion-icon ios="ios-refresh"(click)="gf()" class="float-right" md="md-refresh"end></ion-icon>
+	</ion-navbar>
+</ion-header>
+
+
+
+  <ion-content>
+    <ion-list>
+  
+      <ion-item>
+        <ion-label floating>Full Name</ion-label>
+        <ion-input type="text" [(ngModel)]="name" required></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Phone Number</ion-label>
+        <ion-input type="number"[(ngModel)]="phnnumber" required ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Driving Licence Number</ion-label>
+        <ion-input type="text"[(ngModel)]="dln" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Vehicle Number</ion-label>
+        <ion-input type="text"[(ngModel)]="vehn" required></ion-input>
+      </ion-item>
+     
+     </ion-list>
+
+			<button ion-button full type="submit" (click)="save(name,phnnumber,dln,vehn)">Submit</button>
+		
+	
+</ion-content>
